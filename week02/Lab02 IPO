@@ -1,0 +1,118 @@
+Input 
+	fTemp
+
+Processing
+	get fTemp	
+		calculate cTemp
+		display cTemp
+
+Output
+	cTemp
+
+++++++++++++++++
+Problem2
+
+Input
+	price
+	
+Processing
+	get price
+	calculate change
+	calculate quarters
+	recalculate change
+	calculate dimes
+	recalculate change
+	calculate nickles
+	recalculate change
+	calculate pennies
+	display output
+	
+Output
+	change
+	quarters
+	dimes
+	nickles
+	pennies
+
+++++++++++++++++
+Problem3
+
+Input
+	numCookies
+
+Processing
+	get numCookies
+	calculate ingredients 
+		if numCookies > 60
+			then numCookies - 60 = moreCookies
+			60 + moreCookies
+			display output
+		else 
+			60 - numCookies = lessCookies
+			display output
+				
+
+Output
+	all-purose flour
+	baking soda
+	salt
+	softened butter
+	granulated sugar
+	brown sugarvanilla extract
+	large eggs
+	chocolate morsles
+	chopped nuts
+
++++++++++++++++++
+Problem4
+
+Input
+	numStudents
+	numProgrammers
+
+Processing
+	get numStudent
+	get numProgrammers
+	calculate percentage numStudents -numProgrammers*.10
+	display output
+
+Output
+	percentage of programming majors in class
+	
+++++++++++++++++
+Problem5
+
+Input
+	get usDollar
+	get canDollar
+	get mexPesos
+	get exchange rates
+
+Processing 
+	
+	calculate exchage rate for canDollar
+	calculate exchange rate for mexPesos
+	display output
+Output
+	value of usDollar vs canDollar and mexPesos
+	
++++++++++++++++++
+Problem 6
+
+Input
+	get numOne
+	get numTwo
+	get usrAnswer
+	
+Processing
+	display numOne and numTwo
+		calculate numOne + numTwo = answer
+	get usrAnswer
+		if usrAnswer = answer
+			display "correct!"
+		else 
+			diplay "incorrect the answer is " answer
+Output
+	answer
+
+	

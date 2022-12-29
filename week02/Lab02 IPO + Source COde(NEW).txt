@@ -1,0 +1,231 @@
+CHRISTIAN COLLIS, LAB02 IPO & SOURCE CODE 
+
+Input 
+	fTemp
+
+Processing
+	get fTemp	
+		calculate cTemp
+		display cTemp
+
+Output
+	cTemp
+
+SOURCE CODE 
+ Console.WriteLine("Please enter a temperate in F, this program with convert it to C");
+
+            int fTemp = int.Parse(Console.ReadLine());
+
+            int cTemp = (fTemp - 32) * 5 / 9;
+
+            Console.WriteLine(fTemp + " fahrenhiet is " + cTemp + " in celcius.");
+            Console.WriteLine();
+
+++++++++++++++++
+Problem2
+
+Input
+	price
+	
+Processing
+	get price
+	calculate change
+	calculate quarters
+	recalculate change
+	calculate dimes
+	recalculate change
+	calculate nickles
+	recalculate change
+	calculate pennies
+	display output
+	
+Output
+	change
+	quarters
+	dimes
+	nickles
+	pennies
+
+SOURCE CODE
+static void Main(string[] args)
+        {
+            Console.WriteLine("Please enter a price less than $1");
+            Console.WriteLine("Price");
+
+            int price = int.Parse(Console.ReadLine());
+            Console.WriteLine();
+
+            int change = 100 - price;
+
+            int quarters = change / 25;
+
+            change = change - quarters * 25;
+
+            int dimes = change / 10;
+
+            change = change - dimes * 10;
+
+            int nickles = change / 5;
+
+            change = change - nickles * 5;
+
+            int pennies = change / 1;
+
+            change = change - pennies * 1;
+
+            Console.WriteLine("The change is " + quarters + " quarters, " + dimes + " dimes, " + nickles + " nickles, " + pennies + " pennies.");
+            Console.WriteLine();
+        }
+
+++++++++++++++++
+Problem3
+
+Input
+	numCookies
+
+Processing
+	get numCookies
+	calculate ingredients 
+		if numCookies > 60
+			then numCookies - 60 = moreCookies
+			60 + moreCookies
+			display output
+		else 
+			60 - numCookies = lessCookies
+			display output
+				
+
+Output
+	all-purose flour
+	baking soda
+	salt
+	softened butter
+	granulated sugar
+	brown sugarvanilla extract
+	large eggs
+	chocolate morsles
+	chopped nuts
+
+SOURCE CODE 
+
+Console.WriteLine("Please enter the number of cookies you would like to make.");
+            int numCookies = int.Parse(Console.ReadLine());
+
+            if(numCookies > 60)
+            {
+                int moreCookies = numCookies - 60;
+                numCookies = moreCookies + 60;
+                Console.WriteLine(numCookies);
+            }
+            else if (numCookies < 60)
+            {
+                int lessCookies = 60 - numCookies;
+                Console.WriteLine(numCookies);
+            }
+            Console.WriteLine();
+
++++++++++++++++++
+Problem4
+
+Input
+	numStudents
+	numProgrammers
+
+Processing
+	get numStudent
+	get numProgrammers
+	calculate percentage numStudents -numProgrammers*.10
+	display output
+
+Output
+	percentage of programming majors in class
+	
+SOURCE CODE
+
+Console.WriteLine("Please enter the total number of students in the class.");
+            double numStudents = double.Parse(Console.ReadLine());
+            Console.WriteLine("Please enter the number of Programing Majors in the class.");
+            double numProgrammers = double.Parse(Console.ReadLine());
+
+            double percProg = numStudents - numProgrammers * .10;
+
+            Console.WriteLine("The percentage of Programing Majors is " + percProg + "%.");
+            Console.WriteLine();
+
+++++++++++++++++
+Problem5
+
+Input
+	get usDollar
+	get canDollar
+	get mexPesos
+	get exchange rates
+
+Processing 
+	
+	calculate exchage rate for canDollar
+	calculate exchange rate for mexPesos
+	display output
+Output
+	value of usDollar vs canDollar and mexPesos
+	
+SOURCE CODE
+
+decimal mexPesos;
+            decimal euros;
+            decimal canDollars;
+           
+
+            Console.WriteLine("Enter a US Dollar ammount");
+            decimal usDollars = decimal.Parse(Console.ReadLine());
+
+            mexPesos = decimal.Multiply(usDollars, 18.00m);
+            euros = decimal.Multiply(usDollars, 0.90m);
+            canDollars = decimal.Multiply(usDollars, 0.31m);
+
+            Console.WriteLine(usDollars + " US Dollars is " + mexPesos + " Mexican Pesos.");
+            Console.WriteLine(usDollars + " US Dollars is " + euros + " Euros.");
+            Console.WriteLine(usDollars + " US Dollars is " + canDollars + " Canadian Dollars.");
+            Console.WriteLine();
+
++++++++++++++++++
+Problem 6
+
+Input
+	get numOne
+	get numTwo
+	get usrAnswer
+	
+Processing
+	display numOne and numTwo
+		calculate numOne + numTwo = answer
+	get usrAnswer
+		if usrAnswer = answer
+			display "correct!"
+		else 
+			diplay "incorrect the answer is " answer
+Output
+	answer
+
+SOURCE CODE
+	
+	random generator = new Random();
+int firstNum = Generator.Next(10, 1000);
+	random generator2 = new Random(); 
+            int secNum = Generator2.Next(10, 1000);
+            int ans = firstNum + secNum;
+
+            Console.WriteLine("The first number is " + firstNum + " the second number is " + secNum );
+            Console.WriteLine("What is the sum of both numbers?");
+
+            int numGuess = int.Parse(Console.ReadLine());
+
+            if (numGuess == ans)
+                Console.WriteLine("Thats Right!");
+            else
+                Console.WriteLine("Sorry, the correct answer is " + ans);
+
+            Console.WriteLine();
+
+++++++++++++++++++++++++++++++++++
+	
